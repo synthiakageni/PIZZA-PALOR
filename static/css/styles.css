@@ -1,4 +1,8 @@
-.image{
+body{
     background-size: cover;
     background-repeat: no-repeat;
+}
+.intro{
+    text-align: center;
+    color: white;
 }
