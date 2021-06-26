@@ -1,15 +1,28 @@
 .intro{
     text-align: center;
-    color: white;
+    color:blueviolet;
     padding-top: 3em;
-    font-style:inherit;
     font-size: xx-large;
-    background: url(../../images/piz.png);
+    background:url(../../images/pizza3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 0em;
 }
-.makeOrder{
-    background-color: tomato;
+.head{
+    padding: 3em 3em;
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: 'tangerine',serif;
+}
+#make-order{
+    background-color:lawngreen;
     color:white;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+#contact{
+background-color: gray;
+font-size: small;
 }
