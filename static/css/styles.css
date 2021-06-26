@@ -1,14 +1,14 @@
 .intro{
     text-align: center;
-    color: indigo;
+    color: white;
     padding-top: 3em;
     font-style:inherit;
     font-size: xx-large;
-    background-color: grey;
+    background: url(../../images/piz.png);
 }
 .makeOrder{
-    background:grey;
-    color:indigo;
+    background-color: tomato;
+    color:white;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
