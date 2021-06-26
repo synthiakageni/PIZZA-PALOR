@@ -1,8 +1,16 @@
-body{
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 .intro{
     text-align: center;
     color: white;
+    padding-top: 3em;
+    font-style: italic;
+    font-size: xx-large;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.makeOrder{
+    background:grey;
+    color:indigo;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
