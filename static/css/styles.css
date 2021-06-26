@@ -1,11 +1,10 @@
 .intro{
     text-align: center;
-    color: white;
+    color: indigo;
     padding-top: 3em;
-    font-style: italic;
+    font-style:inherit;
     font-size: xx-large;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: grey;
 }
 .makeOrder{
     background:grey;
