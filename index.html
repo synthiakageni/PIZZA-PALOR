@@ -10,41 +10,16 @@
 </head>
 
 <body>
-    <div class="container">  
-     <!-- <div style="background =images/pizza3.jpg" >
-        <h1>PIZZA PALOR</h1>
-        <p>YOUR FAVOURITE PIZZA PLACE</p>
 
-    -- </div> -->
-      
-    <div class="view landing">
-      <div id="overlay">
-          <nav class="navbar navbar-expand-sm bg-success navbar-dark fixed-top">
-            <a class="navbar-brand" href="#">PIZZA PALOR</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse align-items-center" id="collapsibleNavbar">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="#about_us">About Us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#variety">Our Varieties</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact">Contact Us</a>
-                </li>    
-              </ul>
-            </div>  
-          </nav>
-          <div class="intro">
-            <div class="container" id="head">
-              <div class="row">
-                  <div style="background:url(images/pizza3.jpg);"> 
-                <div class="col-md-12 mb-4 white-text text-center text">
-                  <h1 class="h1-reponsive gold-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 pulse"><strong>Pizza palor</strong></h1>
-                  <h5 class="text-uppercase mb-4 gold-text floater"><strong>Your favourite pizza place</strong></h5>
+      <div class="container">     
+    <div class="intro">
+          <h1>PIZZA PALOR</h1>
+          <p>YOUR FAVOURITE PIZZA PLACE</p>
+          <div class="animate">
+            <iframe src="https://giphy.com/embed/eP7hei0yHQxzO" width="480" height="442" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/stickers/pizza-yummy-eP7hei0yHQxzO"></a></p>
+            <!-- <p><a href="https://giphy.com/embed/o3vJeahO5sZOA0IlB0"></a></p> -->
+        </div>
+    
                   <a class="btn btn-orange button floater" href="#make-order">  Order Now!</a>
                 </div>
             </div>
@@ -74,78 +49,14 @@
         </div>
       </div>
   </div> 
-
-
-  <div class="container carousel slide carousel-multi-item" data-ride="carousel" id="variety">
-    <div class="controls-top "> 
-      <h2>Our Varieties</h2>
-    </div>
-    <div class="carousel-inner" role="listbox">
-      <div class="carousel-item active">
-        <div class="col-md-4">
-          <div class="card mb-2">
-            <img class="card-img-top" src="images/pizza1.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Chicken Tikka</h5>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-md-4">
-          <div class="card mb-2">
-            <img class="card-img-top" src="images/pizza3.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">PeriPeri Pizza</h5>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-md-4">
-          <div class="card mb-2">
-            <img class="card-img-top" src="images/pizza3.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Raspberry Dessert Pizza</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="col-md-4">
-          <div class="card mb-2">
-            <img class="card-img-top" src="images/pizza.cms" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Chicken Alfredo Pizza</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-2">
-            <img class="card-img-top" src="images/pizza3.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Sunchoke Pizza</h5>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-md-4">
-          <div class="card mb-2">
-            <img class="card-img-top" src="images/pizza1.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title"> Buffalo Chicken Sticks</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
+ <div class="makeOrder"> 
   <div class="container-fluid order" id="make-order">
     <div class="order-overlay">
       <div class="controls-top text-center" id="Order-now"> 
-        <h2>Order Here</h2>
+         
+        <h2>MAKE ORDER</h2>
       </div>
-      <h2>Order your pizza here</h2>
+      <h2>Order your pizza here...</h2>
       <div class="row">
           <div class="col-md-3">
             <form action="">
@@ -191,6 +102,12 @@
                     <input type="checkbox" class="custom-control-input" id="Pineapple" value="Pineapple" name="toppings">
                     <label class="custom-control-label" for="Pineapple">Pineapple</label>
                   </div>
+                  <input type="number" name="pizzaNumber" id="pizzaNumber" class="form-control"
+                  placeholder="-Enter the quantity-">
+                  <button class="btn btn-primary submit" id="pick" value="0">I WILL PICK</button>
+                    <button class="btn btn-primary submit" id="deliver" value="200">I NEED DELIVERY</button>
+
+
                 <br><br>
               <button type="submit" class="btn btn-orange proceed">Proceed</button>
               
@@ -255,6 +172,7 @@
            <p>Phone: +254733428929</p>
         </div>
         </div>
-
+    </div>
+</div>
 </body>
 <html> 
