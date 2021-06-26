@@ -11,11 +11,12 @@
 
 <body>
     <div class="container">  
-    <div class="intro" style="background =images/pizza3.jpg" > 
+     <!-- <div style="background =images/pizza3.jpg" >
         <h1>PIZZA PALOR</h1>
         <p>YOUR FAVOURITE PIZZA PLACE</p>
 
-    </div>
+    -- </div> -->
+      
     <div class="view landing">
       <div id="overlay">
           <nav class="navbar navbar-expand-sm bg-success navbar-dark fixed-top">
@@ -37,21 +38,21 @@
               </ul>
             </div>  
           </nav>
-          <div class="mask rgba-black-light align-items-center">
+          <div class="intro">
             <div class="container" id="head">
               <div class="row">
+                  <div style="background:url(images/pizza3.jpg);"> 
                 <div class="col-md-12 mb-4 white-text text-center text">
                   <h1 class="h1-reponsive gold-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 pulse"><strong>Pizza palor</strong></h1>
                   <h5 class="text-uppercase mb-4 gold-text floater"><strong>Your favourite pizza place</strong></h5>
                   <a class="btn btn-orange button floater" href="#make-order">  Order Now!</a>
                 </div>
+            </div>
               </div>
             </div>
           </div>
-          <div class="arrow bounce"> <a href="#variety"> <img src="images/arrow.ico" alt=" arrow"width="40px"></a></div>
       </div>
     </div>
-  </header>
   
   <div class="controls-top text-center" id="about_us"> 
       <h2>About Us</h2>
@@ -72,7 +73,7 @@
           </div>
         </div>
       </div>
-  </div> -->
+  </div> 
 
 
   <div class="container carousel slide carousel-multi-item" data-ride="carousel" id="variety">
@@ -144,9 +145,9 @@
       <div class="controls-top text-center" id="Order-now"> 
         <h2>Order Here</h2>
       </div>
-      <h2>Order your pizza here and we will deliver it to you at your door step!</h2>
+      <h2>Order your pizza here</h2>
       <div class="row">
-          <div class="col-sm-5">
+          <div class="col-md-3">
             <form action="">
                 <label for="select">Select Your Flavor</label>
                 <select class="browser-default custom-select custom-select-md mb-3 name">
@@ -157,6 +158,7 @@
                   <option value="veg tikka Pizza">Veg Tikka Pizza</option>
                   <option value=" Spicy Boerewors">spicy Boerewors</option>
                 </select>
+                
               <label for="select">Select Size</label>
               <select class="browser-default custom-select custom-select-md mb-3" id="size">
                 <option selected value="0">Select size here</option>
@@ -164,6 +166,7 @@
                 <option value="medium">Medium -- sh. 850</option>
                 <option value="small">Small -- sh. 500</option>
               </select>
+        
               <label for="crust">Choose your favorite Crust!</label>
                 <select class="browser-default custom-select custom-select-md mb-3" id="crust">
                     <option selected value="0">Select your preferred crust!</option>
@@ -193,13 +196,14 @@
               
             </form>
           </div>
-          <div class="col-sm-7">
-            <div id="information">
+          <span class="col-md-4"></span>
+          <div class="col-md-4">
+            <!-- <div id="information">
               <p>Your order will be processed and delivered within one hour of placing.</p>
               <p>Make sure you have the total amout for the order during order delivery delivery.</p>
               <p>Incase of any comment of complaint, Please reach out to us as fast as possible.</p>
               <p id="regards">Regards, Management</p>
-            </div>
+            </div> -->
             <div class="choise">
               <h2>Your Order is:</h2>
               <div id="your-orders">
@@ -232,9 +236,9 @@
               <button class="btn btn-orange" id="checkout">Checkout</button>
               <button class="btn btn-orange deliver">Home delivery?</button>
             </div>
-
-
-  
+        </div> 
+    <div class="row">  
+  <div class="col-md-5"> 
           <h2>Contact Us</h2>
         
           <h2>Location</h2>
@@ -242,11 +246,15 @@
           <p>Ciata city|Kiambu Road</p>
           <p>1199 Ciata</p>
         
-        
+        </div>
+        <span class="col-md-2"></span>
+        <div class="col-md-5">
           <h2>Customer Care</h2>
            <p>pizzapalor@gmail.com</p>
            <p>Tell: 0233438929</p> 
            <p>Phone: +254733428929</p>
-        </div>   
+        </div>
+        </div>
+
 </body>
 <html> 
