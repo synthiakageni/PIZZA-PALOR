@@ -7,22 +7,31 @@ function Total(size, crust, topping, delivery) {
   this.delivery = delivery;
 }
  
-function validatePick() {
-  let selectedCrust = parseFloat(document.getElementById("crust").value);
-  let selectedToppings = parseFloat(document.getElementById("toppings").value);
-  let selectedSize = parseFloat(document.getElementById("size").value);
-  let quantity = document.getElementById("pizzaNumber").value;
-  let selectedDelivery = parseFloat(document.getElementById("pick").value);
+// function validatePick() {
+//   let selectedCrust = parseFloat(document.getElementById("crust").value);
+//   let selectedToppings = parseFloat(document.getElementById("toppings").value);
+//   let selectedSize = parseFloat(document.getElementById("size").value);
+//   let quantity = document.getElementById("pizzaNumber").value;
+//   let selectedDelivery = parseFloat(document.getElementById("pick").value);
 
-  const pickDelivery = new Total(selectedSize, selectedCrust, selectedToppings, selectedDelivery);
+//   const pickDelivery = new Total(selectedSize, selectedCrust, selectedToppings, selectedDelivery);
 
-   let order = selectedCrust
-  // let totalCost = cost * quantity;
-alert('order')
-  
-  }
+//   var cost = pickDelivery.size + pickDelivery.crust + pickDelivery.topping + pickDelivery.delivery
+//   let totalCost = cost * quantity;
 
+//   if (selectedCrust == "" || selectedToppings == "" || selectedSize == "" || quantity == "") {
+//     alert('')
+//   } else {
+//       $(".summary").show();
+//       document.getElementById("pizzaQuantity").innerHTML = quantity;
+//       document.getElementById("pizzaSize").innerHTML = selectedSize;
+//       document.getElementById("pizzaCrust").innerHTML = selectedCrust;
+//       document.getElementById("pizzaTopping").innerHTML = selectedToppings;
+//       document.getElementById("totalValue").innerHTML = totalCost;
 
+//   }
+
+// }
 
 function validateDeliver() {
   let selectedCrust = parseFloat(document.getElementById("crust").value);
@@ -45,7 +54,7 @@ function validateDeliver() {
   console.log(selectedSize);
   console.log(selectedDelivery);
   console.log(quantity);
-  location=prompt("enter location.")
+  // location=prompt("enter location.")
 
   const deliver = new Total(selectedSize, selectedCrust, selectedToppings, selectedDelivery);
 
