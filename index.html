@@ -64,7 +64,7 @@
                       <div class="col-md-3"> 
                         <label for="crust">Choose Crust!</label>
                           <select class="browser-default custom-select custom-select-md mb-3" id="crust">
-                              <!-- <option selected value="0">Select your preferred crust!</option> -->
+
                               <option value="0"> select crust</option>
                             <option value="Hot Dog Stuffed">Stuffed-- sh. 250</option>
                             <option value="The Pan">The Pan-- sh. 200</option>
@@ -87,15 +87,27 @@
                           </div>
                         </div>
                           <br><br>
-                        <button type="submit" class="btn btn-success" id="proceed">Proceed</button>
-                        
+                          
+                        <div class="col-md -3">  
+                        <input type="number" name="pizzaNumber" id="pizzaNumber" class="form-control"
+                        placeholder="-Enter the quantity-">
+                      </div>
+                      <div class="col-md-3">  
+                    <button class="btn btn-primary submit" id="pick" value="0">I WILL PICK</button>
+                  </div>
+                  <div class="col-md-3"> 
+                    <button class="btn btn-primary submit" id="deliver" value="200">I NEED DELIVERY</button>
+                  </div>
+                  <div class="col-md-3"> 
+                    <button type="submit" class="btn btn-success" id="proceed">order</button>
+                  </div>
+
+                  
                       </form>
                     </div>
                     <span class="col-md-2"></span>
                     <div class="col-md-5">
-                      <div id="information">
-                        
-                      </div>
+              
                       <div class="choise">
                         <h2>Your Order is:</h2>
                         <div id="your-orders">
@@ -124,17 +136,17 @@
                           <p id="addedprice">Delivery will cost sh.300</p>
                           <p id="finallmessage"></p>
                         </div>
-                        <button class="btn btn-success" id="addpizza">Add Pizza</button>
+                        <!-- <button class="btn btn-success" id="addpizza">Add Pizza</button> -->
                         <button class="btn btn-success" id="checkout">Checkout</button>
-                        <button class="btn btn-success" id="delivery" >Home delivery?</button>
+                        <!-- <button class="btn btn-success" id="delivery" >Home delivery?</button> -->
                       </div>
-                      <div class="delivery">
+                      <!-- <div class="delivery">
                           <form action="">
                             <div class="form-group">
                               <input type="text" id="name" class="form-control mb-3" placeholder="Name">
                               <input type="number" id="phone" class="form-control mb-3" placeholder="Pnone Number">
                               <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
-                              <button class="btn btn-success" id="final-order">Place Order</button>
+                              <button class="btn btn-success" id="final-order">Place Order</button> -->
                             </div>
                           </form>
                       </div>
