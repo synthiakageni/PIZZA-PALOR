@@ -10,29 +10,19 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple">
     <title>pizza-palor</title>
 </head>
-
 <body>
-
-        
     <div class="intro">
       <div class="head">  
           <h1>LA BOTEGA LA PIZZA</h1>
           <p>IL TUO POSTO PREFERITO LA PIZZA</p>
-        </div>
+      </div>
           <div class="animate">
             <iframe src="https://giphy.com/embed/eP7hei0yHQxzO" width="480" height="442" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/stickers/pizza-yummy-eP7hei0yHQxzO"></a></p>
         </div>
-    
-       
-              
-                </div>
-            
-            </header>
-            
-            
-          
-            <div class="container-fluid order" id="make-order">
-              <div class="order-overlay">
+    </div>
+      
+          <div class="container-fluid order" id="make-order">
+            <div class="order-overlay">
                 <div class="controls-top text-center" id="Order-now"> 
                   <h2>Order Here</h2>
                 </div>
@@ -64,8 +54,7 @@
                       <div class="col-md-3"> 
                         <label for="crust">Choose Crust!</label>
                           <select class="browser-default custom-select custom-select-md mb-3" id="crust">
-
-                              <option value="0"> select crust</option>
+                            <option value="0"> select crust</option>
                             <option value="Hot Dog Stuffed">Stuffed-- sh. 250</option>
                             <option value="The Pan">The Pan-- sh. 200</option>
                             <option value="Cheesy Bite">Cheesy Bite-- sh. 220</option>
@@ -86,9 +75,7 @@
                             <label class="custom-control-label" for="Mushrooms">Mushrooms</label>
                           </div>
                         </div>
-                          <br><br>
-                          
-                        <div class="col-md -3">  
+                          <div class="col-md -3">  
                         <input type="number" name="pizzaNumber" id="pizzaNumber" class="form-control"
                         placeholder="-Enter the quantity-">
                       </div>
@@ -101,61 +88,35 @@
                   <div class="col-md-3"> 
                     <button type="submit" class="btn btn-success" id="proceed">order</button>
                   </div>
-
-                  
-                      </form>
                     </div>
                     <span class="col-md-2"></span>
                     <div class="col-md-5">
-              
-                      <div class="choise">
+                      <div class="summary">
                         <h2>Your Order is:</h2>
-                        <div id="your-orders">
-                          <table class="table table-sm  pizzatable">
-                            <thead>
-                              <tr>
+                          <table>
+                             <tr>
                                 <th scope="col">Name</th>
                                 <th scope="col">Size</th>
                                 <th scope="col">Crust</th>
                                 <th scope="col">Topping</th>
                                 <th scope="col">Total</th>
                               </tr>
-                            </thead>
-                            <tbody id="ordersmade">
                               <tr>
-                                <td id="pizzaname"></td>
-                                <td id="pizzasize"></td>
-                                <td id="pizzacrust"></td>
-                                <td id="pizzatopping"></td>
-                                <td id="totals"></td>
+                                <td id="pizzaQuantity"></td>
+                                <td id="pizzaName"></td>
+                                <td id="pizzaSize"></td>
+                                <td id="pizzaCrust"></td>
+                                <td id="pizzaTopping"></td>
+                                <td id="totalValue"></td>
                               </tr>                  
-                            </tbody>
+                          
                           </table>
-                          <p id="pizzatotal"></p>
-                          <p id="totalbill"></p> 
-                          <p id="addedprice">Delivery will cost sh.300</p>
-                          <p id="finallmessage"></p>
-                        </div>
-                        <!-- <button class="btn btn-success" id="addpizza">Add Pizza</button> -->
+                      </div>
                         <button class="btn btn-success" id="checkout">Checkout</button>
-                        <!-- <button class="btn btn-success" id="delivery" >Home delivery?</button> -->
                       </div>
-                      <!-- <div class="delivery">
-                          <form action="">
-                            <div class="form-group">
-                              <input type="text" id="name" class="form-control mb-3" placeholder="Name">
-                              <input type="number" id="phone" class="form-control mb-3" placeholder="Pnone Number">
-                              <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
-                              <button class="btn btn-success" id="final-order">Place Order</button> -->
-                            </div>
-                          </form>
-                      </div>
-                    </div>
                 </div>
-              </div>
-            </div>
-          
-            <div class="container-fluid bg-default" id="contact">
+          </div>
+                 <div class="container-fluid bg-default" id="contact">
                 <div class="controls-top "> 
                     <h2>Contact Us</h2>
                   </div>
