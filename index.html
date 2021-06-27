@@ -1,157 +1,165 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/css/styles.css">
-    <link rel="stylesheet" href="static/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://developers.google.com/s/results/fonts/?q=tangerine ">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple">
-    <title>pizza-palor</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="static/css/styles.css">
+  <link rel="stylesheet" href="static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://developers.google.com/s/results/fonts/?q=tangerine ">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple">
+  <title>pizza-palor</title>
 </head>
+
 <body>
-    <div class="intro">
-      <div class="head">  
-          <h1>LA BOTEGA LA PIZZA</h1>
-          <p>IL TUO POSTO PREFERITO LA PIZZA</p>
-      </div>
-          <div class="animate">
-            <iframe src="https://giphy.com/embed/eP7hei0yHQxzO" width="480" height="442" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/stickers/pizza-yummy-eP7hei0yHQxzO"></a></p>
-        </div>
+  <div class="intro">
+    <div class="head">
+      <h1>LA BOTEGA LA PIZZA</h1>
+      <p>IL TUO POSTO PREFERITO LA PIZZA</p>
     </div>
-      
-          <div class="container-fluid order" id="make-order">
-            <div class="order-overlay">
-                <div class="controls-top text-center" id="Order-now"> 
-                  <h2>Order Here</h2>
-                </div>
-                <h2>Order your pizza here and we will deliver it to you at your door step!</h2>
-                <div class=row>
-                
-                    <div class="col-md-3">
-                      <form action="">
-                          <label for="select">Select  Flavor</label>
-                          <select class="browser-default custom-select custom-select-md mb-3 name">
-                            <!-- <option selected value="choose">Choose your flavor</option> -->
-                            <option value="flavor"> select flavor</option>
-                            <option value="Chicken Tikka">Chicken Tikka</option>
-                            <option value="PeriPeri Pizza">PeriPeri Pizza</option>
-                            <option value="Raspberry Dessert Pizza">Raspberry Dessert Pizza</option>
-                            <option value="Chicken Alfredo Pizza">Chicken Alfredo Pizza</option>
-                            <option value="Sunchoke Pizza">Sunchoke Pizza</option>
-                            <option value="Buffalo Chicken Sticks">Buffalo Chicken Sticks</option>
-                          </select>
-                        </div>
-                        <div class="col-md-3"> 
-                        <label for="select">Select Size</label>
-                        <select class="browser-default custom-select custom-select-md mb-3" id="size">
-                          <option selected value="0">Select size here</option>
-                          <option value="large">Large -- sh. 1050</option>
-                          <option value="medium">Medium -- sh. 850</option>
-                          <option value="small">Small -- sh. 500</option>
-                        </select>
-                      </div>
-                      <div class="col-md-3"> 
-                        <label for="crust">Choose Crust!</label>
-                          <select class="browser-default custom-select custom-select-md mb-3" id="crust">
-                            <option value="0"> select crust</option>
-                            <option value="Hot Dog Stuffed">Stuffed-- sh. 250</option>
-                            <option value="The Pan">The Pan-- sh. 200</option>
-                            <option value="Cheesy Bite">Cheesy Bite-- sh. 220</option>
-                          </select>
-                        </div>
-                        <div class="col-md-3">  
-                        <label for="Toppings">Select Your Toppings at sh. 50 each</label><br>
-                          <div class="custom-control custom-checkbox custom-control-inline">
-                            <input type="checkbox" class="custom-control-input" id="Sausage" value="Sausage" name="toppings">
-                            <label class="custom-control-label" for="Sausage">Sausage</label>
-                          </div>
-                          <div class="custom-control custom-checkbox custom-control-inline">
-                            <input type="checkbox" class="custom-control-input" id="Bacon" value="Bacon" name="toppings">
-                            <label class="custom-control-label" for="Bacon">Bacon</label>
-                          </div>
-                          <div class="custom-control custom-checkbox custom-control-inline">
-                            <input type="checkbox" class="custom-control-input" id="Mushrooms" value="Mushrooms" name="toppings">
-                            <label class="custom-control-label" for="Mushrooms">Mushrooms</label>
-                          </div>
-                        </div>
-                          <div class="col-md -3">  
-                        <input type="number" name="pizzaNumber" id="pizzaNumber" class="form-control"
-                        placeholder="-Enter the quantity-">
-                      </div>
-                      <div class="col-md-3">  
-                    <button class="btn btn-primary submit" id="pick" value="0">I WILL PICK</button>
-                  </div>
-                  <div class="col-md-3"> 
-                    <button class="btn btn-primary submit" id="deliver" value="200">I NEED DELIVERY</button>
-                  </div>
-                  <div class="col-md-3"> 
-                    <button type="submit" class="btn btn-success" id="proceed">order</button>
-                  </div>
-                    </div>
-                  </div>
-                    <span class="col-md-2"></span>
-                    <div class="col-md-5">
-                      <div class="summary">
-                        <h2>Your Order is:</h2>
-                          <table>
-                             <tr>
-                                <th scope="col">Name</th>
-                                <th scope="col">Size</th>
-                                <th scope="col">Crust</th>
-                                <th scope="col">Topping</th>
-                                <th scope="col">Total</th>
-                              </tr>
-                              <tr>
-                                <td id="pizzaQuantity"></td>
-                                <td id="pizzaName"></td>
-                                <td id="pizzaSize"></td>
-                                <td id="pizzaCrust"></td>
-                                <td id="pizzaTopping"></td>
-                                <td id="totalValue"></td>
-                              </tr>                  
-                          
-                          </table>
-                      </div>
-                        <button class="btn btn-success" id="checkout">Checkout</button>
-                      </div>
-                </div>
+    <div class="animate">
+      <iframe src="https://giphy.com/embed/eP7hei0yHQxzO" width="480" height="442" frameBorder="0" class="giphy-embed"
+        allowFullScreen></iframe>
+      <p><a href="https://giphy.com/stickers/pizza-yummy-eP7hei0yHQxzO"></a></p>
+    </div> 
+  </div>
+
+  <div class="container-fluid order" id="make-order">
+    <div class="order-overlay">
+      <div class="controls-top text-center" id="Order-now">
+        <h2>Order Here</h2>
+      </div>
+      <h2>Order your pizza here and we will deliver it to you at your door step!</h2>
+      <div class=row>
+
+        <div class="col-md-3">
+            <label for="select">Select Flavor</label>
+            <select class="browser-default custom-select custom-select-md mb-3 name"> -->
+              <option selected value="choose">Choose your flavor</option> 
+              <option value="flavor"> select flavor</option>
+              <option value="Chicken Tikka">Chicken Tikka</option>
+              <option value="PeriPeri Pizza">PeriPeri Pizza</option>
+              <option value="Raspberry Dessert Pizza">Raspberry Dessert Pizza</option>
+              <option value="Chicken Alfredo Pizza">Chicken Alfredo Pizza</option>
+              <option value="Sunchoke Pizza">Sunchoke Pizza</option>
+              <option value="Buffalo Chicken Sticks">Buffalo Chicken Sticks</option>
+            </select> 
+        </div>
+        <div class="col-md-3">
+          <label for="select">Select Size</label>
+          <select class="browser-default custom-select custom-select-md mb-3" id="size">
+            <option selected value="0">Select size here</option>
+            <option value="1050">Large -- sh. 1050</option>
+            <option value="850">Medium -- sh. 850</option>
+            <option value="500">Small -- sh. 500</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <label for="crust">Choose Crust!</label>
+          <select class="browser-default custom-select custom-select-md mb-3" id="crust">
+            <option value="0"> select crust</option>
+            <option value="250">Stuffed-- sh. 250</option>
+            <option value="200">The Pan-- sh. 200</option>
+            <option value="220">Cheesy Bite-- sh. 220</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <label for="Toppings">Select Your Toppings at sh. 50 each</label><br>
+          <div class="custom-control custom-checkbox custom-control-inline">
+            <input type="checkbox" class="custom-control-input" id="Sausage"  name="toppings">
+            <label class="custom-control-label" for="Sausage">Sausage</label>
           </div>
-                 <div class="container-fluid bg-default" id="contact">
-                <div class="controls-top "> 
-                    <h2>Contact Us</h2>
-                  </div>
-                <div class="row" id="contactdetails">
-                  <div class="col-md-1">
-                     
-                  </div>
-                  <div class="col-md-3 text-justify">
-                    <h2>Location</h2>
-                    <p>PIZZA PALOR</p>
-                    <p>CIATA CITY</p>
-                    <p>1199 KIAMBU</p>
-                  </div>
-                  <div class="col-md-3">
-                    <h2>Customer Care</h2>
-                     <p>pizzapalor@gmail.com</p>
-                     <p>Tell: 0133438929</p> 
-                     <p>Phone: +254733438920</p>
-                  </div>
-                  
-                  <div class="col-md-1"></div>
-                </div>
-                <div class="row">
-                  <div class="container text-center footer">
-                    <p> 2021| Pizza Palor</p>
-                  </div>
-                </div>
-            </div>
-           
-            <script src="static/js/scripts.js"></script>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-            <script src="static/js/scripts.js"></script>
-          </body>
-          </html>
+          <div class="custom-control custom-checkbox custom-control-inline">
+            <input type="checkbox" class="custom-control-input" id="Bacon" name="toppings">
+            <label class="custom-control-label" for="Bacon">Bacon</label>
+          </div>
+          <div class="custom-control custom-checkbox custom-control-inline">
+            <input type="checkbox" class="custom-control-input" id="Mushrooms" name="toppings">
+            <label class="custom-control-label" for="Mushrooms">Mushrooms</label>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <input type="number" name="pizzaNumber" id="pizzaNumber" class="form-control"
+            placeholder="-Enter the quantity-">
+        </div>
+      <div class="col-md-3">  
+        <label for="">Delivery option</label>
+        <select class="browser-default custom-select custom-select-md mb-3" id="deliver">
+          <option value="0"> select delivery</option>
+          <option value="0">PICK</option>
+          <option value="200">DELIVER</option>
+        </div>
+        </select>
+        <div class="col-md-3">
+          <button type="submit" class="btn btn-success" id="proceed" onclick="validateDeliver()">order</button>
+        </div>
+      </div>
+    </div>
+    <span class="col-md-2"></span>
+    <div class="col-md-5">
+      <div class="summary">
+        <h2>Your Order is:</h2>
+        <table>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Size</th>
+            <th scope="col">Crust</th>
+            <th scope="col">Topping</th>
+            <th scope="col">Total</th>
+          </tr>
+          <tr>
+            <td id="pizzaQuantity"></td>
+            <td id="pizzaName"></td>
+            <td id="pizzaSize"></td>
+            <td id="pizzaCrust"></td>
+            <td id="pizzaTopping"></td>
+            <td id="totalValue"></td>
+          </tr>
+
+        </table>
+      </div>
+      <button class="btn btn-success" id="checkout" onclick="validatePick()">Checkout</button>
+    </div>
+  </div>
+  </div>
+  <div class="container-fluid bg-default" id="contact">
+    <div class="controls-top ">
+      <h2>Contact Us</h2>
+    </div>
+    <div class="row" id="contactdetails">
+      <div class="col-md-1">
+
+      </div>
+      <div class="col-md-3 text-justify">
+        <h2>Location</h2>
+        <p>PIZZA PALOR</p>
+        <p>CIATA CITY</p>
+        <p>1199 KIAMBU</p>
+      </div>
+      <div class="col-md-3">
+        <h2>Customer Care</h2>
+        <p>pizzapalor@gmail.com</p>
+        <p>Tell: 0133438929</p>
+        <p>Phone: +254733438920</p>
+      </div>
+
+      <div class="col-md-1"></div>
+    </div>
+    <div class="row">
+      <div class="container text-center footer">
+        <p> 2021| Pizza Palor</p>
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+
+<script src="static/js/scripts.js"></script>
+
+</html>
