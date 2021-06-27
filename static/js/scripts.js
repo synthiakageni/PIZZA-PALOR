@@ -48,9 +48,9 @@ function validateDeliver() {
   var cost = deliver.size + deliver.crust + deliver.topping + deliver.delivery
   let totalCost = cost * quantity;
   if (selectedCrust == "" || selectedToppings == "" || selectedSize == "" || quantity == "") {
-      alert('enter your location')
+      $(".summary").show()
   } else {
-      $(".summary").show();
+      return false;
   }
 }
 
@@ -67,7 +67,7 @@ function validateDeliver() {
           validatePick();
       } else {
 
-          $(".summary").shoe();
+          $(".summary").show();
       }
   });
 
@@ -79,7 +79,6 @@ function validateDeliver() {
           prompt("Provide your location")
           validateDeliver();
       } else {
-          $(".order-form").show();
-          $(".summary").hide();
+          $(".summary").show();
       }
   });
