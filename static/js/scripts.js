@@ -63,3 +63,8 @@ function validateDeliver() {
   alert( 'Total cost is'+ totalCost)
  
 }
+function reply() {
+  let name = document.getElementById("name").value;
+  let output =  "Hello " + name + ", we have received your message,thankyou for reaching out to us.";
+  alert(output);
+}

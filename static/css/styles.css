@@ -32,3 +32,25 @@ padding-left: 5em;
 .choise{
     padding: 2em 5em;
 }
+.form{
+    color: chartreuse;
+    background: transparent;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#name{
+    font-size: 2em;
+    color: chartreuse;
+}
+#email{ 
+    font-size:2em ;
+    color: chartreuse;
+}
+#message{
+
+    font-size: 2em;
+    color: chartreuse;
+
+}
